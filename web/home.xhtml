@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="/css/default.css"/>
+        <h:outputStylesheet name="/css/cssLayout.css"/>
+        <title>ONLINE BOOK CATALOGUE</title>
+    </h:head>
+
+    <h:body>
+
+        <div id="top">
+            <ui:insert name="top">ONLINE BOOK CATALOGUE</ui:insert>
+        </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">
+                <center>
+                    Online Book Catalogue is a Platform where great books are made before being published, the aim of the platform is to get books reviewed by expert authors and contributions are being made before they are being compliled and published.
+                    We believe in excellence and demand that readers should have great books to read.
+                    Online Book Catalogue is an Open Platform, open to interested authors and readers, to contribute to the development of a book, you can call it github for authors.
+                    <h:form>
+                        <h:commandLink action='login.xhtml' value='Login'/> | <h:commandLink value='Register' action='register.xhtml' /> 
+                    </h:form>
+                </center>
+            </ui:insert>
+        </div>
+
+        <div id="bottom">
+            <ui:insert name="bottom">&#169; copyright, 2019</ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
